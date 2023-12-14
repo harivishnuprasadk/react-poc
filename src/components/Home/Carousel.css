@@ -1,0 +1,41 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .image-container {
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+  }
+  
+  /* Hide scrollbar for webkit browsers (Chrome, Safari, newer versions of Edge) */
+  .image-container::-webkit-scrollbar {
+    width: 0;
+  }
+  img {
+    width: 150px;
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .visible {
+    transform: translateX(0);
+  }
+  
+  .hidden {
+    transform: translateX(100%);
+  }
+
+  .next-btn, .prev-btn {
+    width: 20px;
+    padding: 10px;
+  }
