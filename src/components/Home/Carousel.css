@@ -35,7 +35,20 @@
     transform: translateX(100%);
   }
 
-  .next-btn, .prev-btn {
+  .next-btn {
     width: 20px;
-    padding: 10px;
+    margin-right: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .next-btn:hover,.prev-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+  }
+  
+
+  .prev-btn {
+    width: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }

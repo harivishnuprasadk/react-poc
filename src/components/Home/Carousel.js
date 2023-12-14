@@ -46,7 +46,7 @@ const Carousel = ({ images, title }) => {
 
   return (
     <div>
-      <h3 style={{ color: "white", padding:'20px' }}>{title}</h3>
+      <h3 style={{ color: "white",marginBottom:'0px',marginTop:'5px', marginLeft:'20px' }}>{title}</h3>
       <div className="carousel-container">
         {scrollPosition > 0 && (
           <img

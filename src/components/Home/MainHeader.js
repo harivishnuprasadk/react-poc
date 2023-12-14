@@ -7,6 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 function MainHeader() {
   return (
     <header className="main-header">
+      <a href="/">
       <svg
         viewBox="0 0 111 30"
         data-uia="netflix-logo"
@@ -21,6 +22,8 @@ function MainHeader() {
           ></path>
         </g>
       </svg>
+      </a>
+     
       <ul className="tabbed-primary-navigation">
         <li className="navigation-menu">
           <a
