@@ -1,4 +1,4 @@
-const apiKey = 'b1e6e6c1e55ef5ef6e16760d4a9063a6'; // Replace with your actual API key
+const apiKey = 'b1e6e6c1e55ef5ef6e16760d4a9063a6';
 const apiUrl = 'https://api.themoviedb.org/3/discover/movie';
 
 // Function to fetch movie data
@@ -19,7 +19,5 @@ async function fetchMovies() {
   }
 }
 
-// Example usage
-fetchMovies().then((movies) => {
-  console.log(movies);
-});
+// console.log(fetchMovies().then(movies=>console.log(movies)));
+module.exports = fetchMovies;

@@ -21,10 +21,8 @@
     width: 0;
   }
   img {
-    width: 150px;
-    max-height: 150px;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
+    width: inherit;
+    height: inherit;
   }
   
   .visible {
@@ -52,3 +50,10 @@
     margin-left: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
+
+  .carousel-image:hover{
+  width: 250px; /* Adjust the width on hover */
+  height: 250px; /* Adjust the height on hover */
+  transform: scale(1.1); /* Optional: Add scaling effect on hover */
+  filter: brightness(1.5); /* Optional: Add brightness effect on hover */
+}

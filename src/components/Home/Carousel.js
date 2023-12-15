@@ -58,13 +58,16 @@ const Carousel = ({ images, title }) => {
         )}
         <div className="image-container" ref={imageContainerRef}>
           {images.map((image, index) => (
-            <img
+            <div style={{width:"200px",height:'130px', marginRight:'10px'}} className="carousel-image"><img
               key={index}
               className={"test"}
-              src={image}
+              src={image.imageUrl}
               alt={`Slide ${index}`}
             />
+            {/* <p style={{color:'white'}}>{image.title}</p> */}
+            </div>
           ))}
+          
         </div>
         <img
           className="next-btn"
