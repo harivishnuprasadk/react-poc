@@ -1,59 +1,102 @@
 .carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    position: relative;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .image-container {
-    overflow: auto;
-    display: flex;
-    width: 100%;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: transparent transparent; /* For Firefox */
-  }
-  
-  /* Hide scrollbar for webkit browsers (Chrome, Safari, newer versions of Edge) */
-  .image-container::-webkit-scrollbar {
-    width: 0;
-  }
-  img {
-    width: inherit;
-    height: inherit;
-  }
-  
-  .visible {
-    transform: translateX(0);
-  }
-  
-  .hidden {
-    transform: translateX(100%);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
 
-  .next-btn {
-    width: 20px;
-    margin-right: 25px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .next-btn:hover,.prev-btn:hover {
-    transform: scale(1.1);
-    filter: brightness(1.5);
-  }
-  
+.image-container {
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+  width: 100%;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
 
-  .prev-btn {
-    width: 20px;
-    margin-left: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
+/* Hide scrollbar for webkit browsers (Chrome, Safari, newer versions of Edge) */
+.image-container::-webkit-scrollbar {
+  width: 0;
+}
+img {
+  width: inherit;
+  height: inherit;
+}
 
-  .carousel-image:hover{
+.visible {
+  transform: translateX(0);
+}
+
+.hidden {
+  transform: translateX(100%);
+}
+
+.next-btn {
+  width: 20px;
+  margin-right: 25px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+
+.prev-btn {
+  width: 20px;
+  margin-left: 25px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-image:hover {
   width: 250px; /* Adjust the width on hover */
   height: 250px; /* Adjust the height on hover */
   transform: scale(1.1); /* Optional: Add scaling effect on hover */
   filter: brightness(1.5); /* Optional: Add brightness effect on hover */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51 39 39 / 80%);
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.button-container:hover {
+  background-color: rgb(51 39 39 / 80%);
+}
+
+.prev-btn-container {
+  position: absolute;
+  width: auto;
+  left: -19px;
+  height: 131px;
+  margin-bottom: 15px;
+}
+
+.next-btn-container {
+  position: absolute;
+  right: 20px;
+  height: 131px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.explore-all {
+  color: #4d98b8;
+  margin-left: 10px;
+  font-size: xx-small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* transition: right 0.3s ease-in-out; */
+  transition: linear;
+}
+
+.explore-all:hover {
+  filter: brightness(1.2);
 }
