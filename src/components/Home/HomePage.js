@@ -6,13 +6,13 @@ import fetchMovies  from "../../service/movieService";
 
 function HomePage() {
   const [movies, setMovies] = useState([]);
+  const [tv, setTv] = useState([]);
 
   useEffect(()=>{
     async function fetchData() {
       try {
         const moviesData = await fetchMovies();
         setMovies(moviesData);
-      console.log('int state',movies);
         //console.log
       } catch (error) {
         console.error('Error fetching movie data:', error);

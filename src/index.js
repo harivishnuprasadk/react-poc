@@ -5,6 +5,8 @@ import { Provider } from "react-redux";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./store/index";
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

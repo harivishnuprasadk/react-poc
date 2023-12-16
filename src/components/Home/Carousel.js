@@ -1,9 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Carousel.css";
+import { useNavigate } from "react-router-dom";
 
 const Carousel = ({ images, title }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const imageContainerRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const container = imageContainerRef.current;
@@ -21,6 +23,10 @@ const Carousel = ({ images, title }) => {
       };
     }
   }, []);
+
+  const openVid=()=>{
+    navigate('/player');
+  }
 
   const handleNextClick = () => {
     const container = imageContainerRef.current;
@@ -56,7 +62,7 @@ const Carousel = ({ images, title }) => {
             onClick={handlePrevClick}
           />
         )}
-        <div className="image-container" ref={imageContainerRef}>
+        <div className="image-container" ref={imageContainerRef} onClick={openVid}>
           {images.map((image, index) => (
             <div style={{width:"200px",height:'130px', marginRight:'10px'}} className="carousel-image"><img
               key={index}
