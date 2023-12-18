@@ -1,0 +1,11 @@
+
+.profile-name{
+    text-align: center;
+    color: #a19a9a;
+    align-items: center;
+}
+
+.profile-icon{
+    width: 150px;
+    height: 150px;
+}

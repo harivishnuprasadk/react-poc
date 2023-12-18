@@ -1,0 +1,63 @@
+/* MainFooter.css */
+
+.member-footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+  }
+  
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .social-link svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Set the icon color to white */
+  }
+  
+  .member-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .member-footer-link-wrapper {
+    margin-right: 20px;
+  }
+  
+  .member-footer-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .member-footer-service {
+    margin-top: 20px;
+  }
+  
+  .service-code {
+    background-color: #ffffff;
+    color: black; /* Set the text color of the button to black */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .member-footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+  }
+  

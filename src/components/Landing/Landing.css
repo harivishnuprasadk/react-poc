@@ -1,0 +1,51 @@
+.list-profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 100%; /* Set the width to 100% of the viewport width */
+    position: absolute;
+    z-index: 100;
+    animation: animateProfileGate .45s forwards;;
+}
+
+.profile-gate-label {
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: unset;
+    width: 100%;
+    text-align: center; /* Center the text horizontally */
+}
+
+.profile-list{
+display: flex;
+}
+
+.manage-profile{
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2vw;
+    margin: 2em 0 1em;
+    padding: 0.5em 1.5em;
+}
+
+@keyframes animateProfileGate {
+    0% {
+        opacity: 0;
+        transform: scale(1.1)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.manage-profile:hover {
+    color: white; /* Change text color to white on hover */
+    border-color: white; /* Change border color to white on hover */
+  }

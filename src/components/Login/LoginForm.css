@@ -1,0 +1,135 @@
+.loginForm {
+    padding: 60px 68px 40px;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: black;
+  }
+  
+  .signIn {
+    text-align: left;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+  
+  /* Styles for the input container */
+  .input-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 100%; /* Set width to 100% */
+  }
+  
+  /* Styles for the input field */
+  .email {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+    background-color: #ccc;
+  }
+  
+  /* Styles for the placeholder in its normal state */
+  .email::placeholder {
+    font-size: 14px;
+    padding: 5px;
+    color: #888;
+    transition: all 0.3s;
+  }
+  
+  /* Styles for the placeholder when the input is focused */
+  .email:focus::placeholder {
+    font-size: 10px;
+    padding: 0;
+    transform: translateY(-20px);
+  }
+  
+  /* Styles for the password input container */
+  .password-input-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 100%; /* Set width to 100% */
+  }
+  
+  /* Styles for the password input field */
+  .password-input {
+    background-color: #ccc;
+    width: 100%; /* Set the same width as the email input */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles for the show/hide password button */
+  .show-password-button {
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  .password-input::placeholder {
+    font-size: 14px;
+    padding: 5px;
+    color: #888;
+    transition: all 0.3s;
+  }
+  
+  /* Styles for the placeholder when the input is focused */
+  .password-input:focus::placeholder {
+    font-size: 10px;
+    padding: 0;
+    transform: translateY(-20px);
+  }
+  
+  .errorMessage {
+    color: #e02121;
+    text-align: left;
+  }
+  
+  .loginButton {
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 24px 0 12px;
+    background: #e50914;
+    width: 100%; /* Set width to 100% */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.55);  }
+  
+    .form-help {
+        display: flex;
+        justify-content: space-between; /* Distribute items along the container with space between them */
+        align-items: center; /* Center items vertically */
+      }
+
+      .help-text{
+        color: #b3b3b3;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .remember-me-cbx{
+        background: #737373;
+        border: 0;
+        border-radius: 2px;
+        height: 16px;
+        left: -20px;
+        width: 16px;
+      }
+
+     .login-signup-now {
+        color: #737373;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 16px;
+    }
