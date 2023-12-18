@@ -3,16 +3,17 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const authSlice = createSlice({
   name: 'auth',
-  initialState: { value: 0 },
+  initialState: { isAuthenticated: false },
   reducers: {
-    increment: (state) => {
-      state.value += 1;
+    login: (state) => {
+      state.isAuthenticated=true;
+      localStorage.setItem('loggedIn',true);
     },
-    decrement: (state) => {
-      state.value -= 1;
-    },
+    logout: (state) => {
+      state.isAuthenticated=false;
+      localStorage.removeItem('loggedIn');    },
   },
 });
 
-export const { increment, decrement } = authSlice.actions;
+export const { login, logout } = authSlice.actions;
 export default authSlice.reducer;

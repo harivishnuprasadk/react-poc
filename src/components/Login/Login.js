@@ -1,9 +1,7 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "../../store/authSlice";
 import "./Login.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Login/Header/Header";
+import Footer from "../Login/Footer/Footer";
 import LoginForm from "./LoginForm";
 
 function Login() {

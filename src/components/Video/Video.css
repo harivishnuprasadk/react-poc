@@ -1,99 +1,110 @@
+.player-container {
+  background-color: #141414;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set height to full viewport height */
+  box-sizing: border-box;
+}
 
-  
-  .player-container {
-    background-color: #141414;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Set height to full viewport height */
-    box-sizing: border-box;
-  }
-  
-  .video-wrapper {
-    background-color: #000;
-    border-radius: 5px;
-    overflow: hidden;
-    flex: 1; /* Use remaining space in the container */
-    position: relative;
-  }
-  
-  .player-controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  button,
-  .player-container.fullscreen,
-  .video-wrapper.fullscreen {
-    color: #fff;
-  }
-  
-  button {
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    opacity: 0.7;
-  }
-  
-  .title,
-  .video-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .player-container.fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-  }
-  
-  .video-wrapper.fullscreen {
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Styles for the ReactPlayer built-in controls (similar to the previous example) */
-  
-  .title-overlay {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    left: 50%;
-    font: larger 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    transform: translateX(-50%);
-    background: transparent;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .player-container:hover .title-overlay {
-    opacity: 1;
-  }
-  
-  .video-title {
-    margin: 0;
-  }
+.video-wrapper {
+  background-color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  flex: 1; /* Use remaining space in the container */
+  position: relative;
+}
 
-  .back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    color: white;
-    /* background-color: #333; */
-    padding: 5px 10px;
-    /* border-radius: 5px;
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button,
+.player-container.fullscreen,
+.video-wrapper.fullscreen {
+  color: #fff;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.title,
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.player-container.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.video-wrapper.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for the ReactPlayer built-in controls (similar to the previous example) */
+
+.title-overlay {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  font: larger "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.player-container:hover .title-overlay {
+  opacity: 1;
+}
+
+.video-title {
+  margin: 0;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: white;
+  /* background-color: #333; */
+  padding: 5px 10px;
+  /* border-radius: 5px;
     z-index: 111111; */
-  }
+}
+
+.flag-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  /* background-color: #333; */
+  padding: 5px 10px;
+  /* border-radius: 5px;
+    z-index: 111111; */
+}

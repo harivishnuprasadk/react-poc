@@ -31,9 +31,14 @@ const Video = ({ videoUrl, title }) => {
         />
         {isHovered && (
           <>
+          <div style={{display:'flex', justifyContent:'space-around',width:'100%'}}>
             <div className="back-button" onClick={handleBackButtonClick}>
             <i className="fas fa-arrow-left fa-2x text-white"></i>
             </div>
+            <div className="flag-button">
+            <i className="fas fa-flag fa-2x text-white"></i>
+            </div>
+          </div>
             <div className="title-overlay">
               <p className="video-title">{title}</p>
             </div>
