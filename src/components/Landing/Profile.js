@@ -7,15 +7,15 @@ function Profile({url,name}) {
         <li className="profile">
           <div>
             <a href='/home'> 
-              <div class="avatar-wrapper">
+              <div className="avatar-wrapper">
                 <img
-                  class="profile-icon"
+                  className="profile-icon"
                   alt="profile-t"
                   src={url}
                 >
                 </img>
               </div>
-              <p class="profile-name">{name}</p>
+              <p className="profile-name">{name}</p>
             </a>
           </div>
         </li>
